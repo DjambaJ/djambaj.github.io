@@ -52,9 +52,9 @@ body {
   }
   
   @keyframes bg {
-    0%   { background-image: url("Images/Geo-BG.jpg"); }
-    50%  { background-image: url("Images/Tech-BG.jpg"); }
-    100% { background-image: url("Images/Geo-BG.jpg"); }
+    0%   { background-image: url("Geo-BG.jpg"); }
+    50%  { background-image: url("Tech-BG.jpg"); }
+    100% { background-image: url("Geo-BG.jpg"); }
   }
   
   #icon {
@@ -118,4 +118,5 @@ body {
       height: 45px;
     }
   }
+
   
