@@ -1,0 +1,121 @@
+/* General Typography */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #0E1111;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 700;
+    color: #0E1111;
+    margin-bottom: 0.5em;
+  }
+  
+  p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin-bottom: 1em;
+  }
+  
+  header .nav a,
+  header .dropbtn {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+  }
+  
+  #icon {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 900;
+  }
+  
+/* Section 1 Hero */
+/* Section 1 Hero with background animation */
+.section1 {
+    color: #0E1111;
+    animation: bg 15s infinite;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  @keyframes bg {
+    0%   { background-image: url("Images/Geo-BG.jpg"); }
+    50%  { background-image: url("Images/Tech-BG.jpg"); }
+    100% { background-image: url("Images/Geo-BG.jpg"); }
+  }
+  
+  #icon {
+    width: auto;
+    background: #F16C22;
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+    padding: 20px 30px;
+  }
+  
+  /* Section 2 About */
+  .section2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 10%;
+    background: #FFFFFF;
+  }
+  .sec-left img {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 12px;
+  }
+  .sec-right {
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  /* Section 3 Logos */
+  .section3 {
+    background: #F16C22;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px 20px;
+  }
+  .section3 img {
+    height: 60px;
+    object-fit: contain;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    #icon {
+      font-size: 1.8rem;
+    }
+    .section2 {
+      flex-direction: column;
+      text-align: center;
+    }
+    .sec-left, .sec-right {
+      margin: 0;
+    }
+    .section3 img {
+      height: 45px;
+    }
+  }
+  
