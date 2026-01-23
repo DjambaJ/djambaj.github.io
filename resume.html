@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume — James Djamba</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700;900&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <link href="resume.css" rel="stylesheet" type="text/css">
+
+  <!-- Scripts-->
+  <script>
+    document.querySelector('.menu-toggle').addEventListener('click', function () {
+      document.querySelector('.nav').classList.toggle('show');
+    });
+  
+    // Mobile dropdown toggle
+    document.querySelectorAll('.dropbtn').forEach(btn => {
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        this.nextElementSibling.classList.toggle('show-dropdown');
+      });
+    });
+
+  </script>
+</head>
+<body>
+    <!-- Header / Navigation -->
+  <header>
+    <a href="index.html" class="logo">
+      <img src="Images/DjambaLogo.png" height="50" alt="James Djamba Logo">
+    </a>
+  
+    <!-- Hamburger menu toggle (only visible on mobile/tablet) -->
+    <button class="menu-toggle" aria-label="Toggle navigation">
+      ☰
+    </button>
+  
+    <!-- Navigation -->
+    <nav class="nav">
+      <a href="index.html#section2">ABOUT ME</a>
+      <div class="dropdown">
+        <button class="dropbtn">PROJECTS</button>
+        <div class="dropdown-content">
+          <a href="">Graphic Design</a>
+          <a href="geospatialdata.html">Geospatial Data</a>
+          <a href="WebDesign.html">Web Design</a>
+        </div>
+      </div>
+      <a href="resume.html">RESUME</a>
+      <a href="">CONTACT</a>
+    </nav>
+  </header>
+
+
+<div class="title">
+  <div class="title-content">
+    <h1>Resume</h1>
+    <div class="PDF"><a href="https://djambaj.github.io/Djamba_Resume.pdf" target="_blank"><button>View PDF</button></a></div>
+  </div>
+</div>
+
+<div class="experience-grid">
+
+  <div class="section-label">Experience</div>
+
+  <!--Job #5----->
+  <div class="job-title">GIS Analyst - <a href="https://www.developstlouis.org/" target="_blank">St. Louis Development Corporation</a></div>
+  <div class="job-location">St. Louis, MO</div>
+  <div class="job-years">Oct 2023 – present</div>
+  <div class="job-bullet">
+    <ul>
+    <li>Build an internal searchable data catalog of all geographic business assets</li>
+    <li>Produce web applications, feature services, and dashboards to be published to ArcGIS Enterprise</li>
+    <li>Develop scripts, models, and templates for geoprocessing and data development</li>
+    <li>Create mobile applications through ESRI products such as Field Maps and Collector</li>
+    <li>Maintain the company’s geodatabases while coordinating with other data managers and users</li>
+    <li>Develop Survey123 forms for emergency data collection</li>
+    <li>Work with many teams to develop maps and graphics for public decision making and internal use</li>
+    </ul>
+  </div>
+
+  <!--Job #4----->
+  <div class="job-title">GIS Specialist - <a href="https://www.stlouis-mo.gov/street/index.cfm" target="_blank">City of St. Louis Street Department</a></div>
+  <div class="job-location">St. Louis, MO</div>
+  <div class="job-years">Feb 2022 – Oct 2023</div>
+  <div class="job-bullet">
+    <ul >
+    <li>Developed mapping applications to facilitate city infrastructure management and decision making</li>
+    <li>Created and maintained geographic data for multiple entities under the Street Department</li>
+    <li>Trained staff on data management, technology usage, and processing tasks</li>
+    <li>Communicated with division heads to identify the best practices to keep data up to date</li>
+    <li>Produced and visualized maps and data for stakeholders and public use</li>
+    </ul>
+  </div> 
+
+  <!--Job #3----->
+  <div class="job-title">Planner - <a href="https://www.shreveportcaddompc.com/home" target="_blank">Shreveport Caddo Metropolitan Planning Commission (MPC)</a></div>
+  <div class="job-location">Shreveport, LA</div>
+  <div class="job-years">May 2019 – Jan 2022</div>
+  <div class="job-bullet">
+    <ul >
+    <li>Developed GIS maps and data to be used in presentations, meetings, and notification systems</li>
+    <li>Review wireless telecommunication construction projects</li>
+    <li>Managed the Planning Commission and Historic Preservation Commission website</li>
+    <li>Researched statistical data in order to develop recommendations and reports</li>
+    <li>Identified and conducted research on communities in proximity to potential projects</li>
+    <li>Responded to government and citizen request for reports and statistical data</li>
+    </ul>
+  </div>
+  
+  <!--Job #2----->
+  <div class="job-title">Design Administration Student/Graduate Assistant - <a href="https://fm.auburn.edu/" target="_blank">Aubrn University Facilities Management</a></div>
+  <div class="job-location">Auburn, AL</div>
+  <div class="job-years">Sep 2018 – May 2019</div>
+  <div class="job-bullet">
+    <ul >
+    <li>Incorporated infrastructure and building plans into the university’s GIS database</li>
+    <li>Updated floor plan and other drawings onto the Auburn University Facilities’ database</li>
+    <li>Scanned and gathered information on old building blueprints</li>
+    </ul>
+  </div>
+
+  <!--Job #1----->
+  <div class="job-title">Planning Intern - <a href="https://www.dothan.org/267/Planning-Development" target="_blank">Dothan Planning & Development Department</a></div>
+  <div class="job-location">Dothan, AL</div>
+  <div class="job-years">May 2018 – Aug 2018</div>
+  <div class="job-bullet">
+    <ul >
+    <li>Formatted and updated city data in preparation for the 2020 US Census</li>
+    <li>Created an inventory of commercial properties comprising maps, building sizes, etc.</li>
+    <li>Organized site visits to verify parcel conditions</li>
+    </ul>
+  </div>
+</div>
+<div class="skills-grid">
+
+  <div class="section-label">Skills and Tools</div>
+  <div class="skills">
+    <!--Skill #1------->
+    <div class="skill"><button>GIS & Spatial Analysis<span class="arrow">▼</span></button></div>
+    <div class="skill-content">
+      <div class="tools">Tools: ArcGIS Enterprise, ArcGIS Pro, Survey 123, QGIS</div>
+      <div class="capabilities">Capabilities: data collection, processing, geospatial analysis, dashboard creation</div>
+      <div class="skill-desc">Extensive experience with GIS mapping, spatial analysis, and data visualization</div>
+    </div>
+
+    <!--Skill #2------->
+    <div class="skill"><button>Data Analysis & Database Management<span class="arrow">▼</span></button></div>
+    <div class="skill-content">
+      <div class="tools">Tools: Excel (advanced formulas, Power Query), Access, SQL, Microsoft SQL Server Management Studio</div>
+      <div class="capabilities">Capabilities: querying, aggregations, automation, data-driven reporting</div>
+      <div class="skill-desc">Strong skills in data collection, cleaning, formatting, and reporting</div>
+    </div>
+
+    <!--Skill #3------->
+    <div class="skill"><button>Design & Web Development<span class="arrow">▼</span></button></div>
+    <div class="skill-content">
+      <div class="tools">Tools: Adobe Photoshop, Illustrator, InDesign, Dreamweaver, HTML, CSS, WordPress, Squarespace, Granicus, CivicPlus</div>
+      <div class="capabilities">Capabilities: responsive layouts, branding, website updates, visual design</div>
+      <div class="skill-desc">Experienced in graphic and web design, website management, and content creation</div>
+    </div>
+
+    <!--Skill #4------->
+    <div class="skill"><button>Technical Communication<span class="arrow">▼</span></button></div>
+    <div class="skill-content">
+      <div class="tools">Tools: Word, Excel, PowerPoint</div>
+      <div class="capabilities">Capabilities: professional reports, dashboards, documentation</div>
+      <div class="skill-desc">Excellent technical writing, reporting, and presentation skills</div>
+    </div>
+
+    <!--Skill #5------->
+    <div class="skill"><button>Languages<span class="arrow">▼</span></button></div>
+    <div class="skill-content">
+      <div class="tools">French: proficient in speaking, reading, and writing</div>
+    </div>
+
+  </div>
+</div>
+
+</div>
+
+<div class="edu-grid">
+  <div class="section-label">Education</div>
+  <div class="edu-container1">
+    <div class="university">AUBURN UNIVERSITY</div>
+    <p class="degree">BACHELOR OF ENVIORNMENTAL DESIGN</p>
+    <p class="minor">Minor in Industrial and Graphic Design Processes</p>
+    <div class="edu-years">2014 – 2017</div>
+  </div>
+  <div class="edu-container2">
+    <div class="university">AUBURN UNIVERSITY</div>
+    <p class="degree">MASTER OF COMMUNITY PLANNING</p>
+    <div class="edu-years">2017 – 2019</div>
+  </div>
+</div>
+
+
+
+
+  <!-- Scripts -->
+  <script>
+    document.querySelector('.menu-toggle').addEventListener('click', function () {
+      document.querySelector('.nav').classList.toggle('show');
+    });
+  </script>
+
+  <script>
+    var acc = document.getElementsByClassName("skill");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,389 @@
+ body {
+  font-family: system-ui, sans-serif;
+  background: #fafafa;
+  margin: 0;
+}
+
+
+
+/* Header Section */
+
+.title {
+  color: #FFFFFF;
+  background-color: #F16C22;
+  background-image: linear-gradient(to right, #F16C22, #000);
+  height: 40vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  }
+
+.title h1 {
+  padding-top: 3rem;
+}
+
+.title-content {
+  max-width: 900px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.PDF {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.PDF a {
+  text-decoration: none;
+}
+
+.PDF button {
+  all: unset;
+  border: 2px solid #FFFFFF;
+  border-color: #FFFFFF;
+  background-color: transparent;
+  color: #FFFFFF;
+  font-family: 'Open-sans', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 15px 27px;
+}
+
+.PDF button:hover {
+  all: unset;
+  border: 2px solid #FFFFFF;
+  border-color: #FFFFFF;
+  background-color: #FFFFFF;
+  color: #F16C22;
+  font-family: 'Open-sans', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 15px 27px;
+}
+
+ul{
+  list-style-type: "◈  ";
+}
+
+.experience-grid {
+  margin: 2rem auto 0;
+  display: grid;
+  grid-template-columns: 160px 1fr auto;
+  gap: 0.5rem 1rem;
+  max-width: 900px;
+}
+
+.section-label {
+  grid-row: 1 / -1; /* A1:A∞ */
+  font-weight: 700;
+  padding-top: 1rem;
+  text-transform: uppercase;
+  color: #555;
+}
+
+.job-title {
+  grid-column: 2 / 4; /* B:C */
+  padding: 0.4rem 1rem 0rem;
+}
+
+.job-title a {
+  text-decoration: none;
+  color: #F16C22;
+}
+
+.job-title a:hover {
+  color: #FFFFFF;
+  background-color: #F16C22;
+}
+
+.job-bullet {
+  grid-column: 2 / 4; /* B:C */
+  background: white;
+  padding: 0.2rem 1rem;
+  border-radius: 6px;
+  box-shadow: 0 0 5px 3px #e5e5e5;
+}
+
+.job-bullet ul {
+  display: inline-block;
+  overflow-y: auto;
+  line-height: 1.4;
+  max-height: calc(1.4em * 5);
+
+  scrollbar-width: auto;
+  scrollbar-color: #F16C22 transparent;
+}
+
+/* B-only */
+.job-location {
+  grid-column: 2;
+  text-align: left;
+  padding-left: 1rem;
+  font-size: 0.9rem;
+  font-weight: 450;
+  color: #A3A3A3;
+}
+
+/* C-only */
+.job-years {
+  grid-column: 3;
+  text-align: right;
+  padding-right: 1rem;
+  font-size: 0.9rem;
+  font-weight: 450;
+  color: #949494;
+}
+
+/* Optional spacing tweak */
+.job-title {
+  font-weight: 600;
+  margin-top: 0.75rem;
+}
+
+.skills-grid {
+  margin: 3rem auto;
+  display: grid;
+  grid-template-columns: 160px auto;
+  gap: 0rem 1rem;
+  max-width: 900px;
+}
+
+.skills {
+  margin-top: 0.4rem;
+}
+
+.skill {
+  grid-column: 2;
+  background: white;
+  font-family: system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: left;
+  box-shadow: 0 2px 5px 1px #e5e5e5;
+}
+
+.arrow {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.skill button{
+  all: unset;
+  display: flex;
+  justify-content: space-between;
+  width: 93.3%;
+  padding: 0.4rem 2rem 0.4rem 1rem;
+  border-radius: 2px;
+  border: 1px solid #dddddd;
+}
+
+.active, .skill button:hover {
+  color:#F16C22;
+  background: #eeeeee;
+}
+
+.skill button:hover {
+  cursor: pointer;
+  color:#F16C22;
+  border-radius: 2px;
+  background: #dddddd;
+}
+
+.skill.active .arrow {
+  transform: rotate(180deg);
+}
+
+.skill-content {
+  display: none;
+  margin: auto;
+  grid-column: 2;
+  width: 86%;
+  padding: 0rem 2.5rem 1.5rem;
+  background: white;
+  line-height: 1.4;
+  border-bottom: 1px solid #eeeeee;
+  box-shadow: 0 2px 5px 1px #e5e5e5;
+}
+
+.tools {
+  padding: 1.5rem 0rem 0.4rem 0rem;
+}
+
+.capabilities {
+  padding: 0rem 0rem 0.4rem 0rem;
+}
+
+.edu-grid {
+  margin: 4rem auto;
+  padding-bottom: 6rem;
+  display: grid;
+  grid-template-columns: 160px 1fr 1fr;
+  gap: 0.5rem 1rem;
+  max-width: 900px;
+}
+
+.edu-container1 {
+  grid-column: 2;
+  margin-left: 60px;
+  padding-top: 1rem;
+}
+
+.edu-container2 {
+  grid-column: 3;
+  margin-left: 60px;
+  padding-top: 1rem;
+}
+
+.university {
+  font-weight: 750;
+}
+
+.edu-years {
+  font-style: italic;
+  font-size: 0.9rem;
+  font-weight: 450;
+  color: #949494;
+  text-align: right;
+}
+
+.edu-container1 .edu-years {
+  padding-right: 30px;
+}
+
+.edu-container2 .edu-years {
+  padding-right: 50px;
+}
+
+.degree{
+  margin: 0 auto;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.minor {
+  margin: 0 auto;
+  padding-left: 10px;
+  font-style: italic;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color:#636363;
+}
+
+@media (max-width: 900px) {
+  .title-content {
+    margin: 0;
+    padding: 0;
+    display: block;
+    align-items: center;
+  }
+
+  .title-content h1 {
+    margin: 0;
+    padding: 15vh 0 0;
+  }
+  
+  .PDF {
+    position: static;
+    align-items: center;
+  }
+  
+  .experience-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    width: 90vw;
+  }
+
+  /* Section label goes first */
+  .section-label {
+    grid-column: 1;
+    grid-row: auto;
+    margin-bottom: 0.75rem;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: underline 2px;
+    text-decoration-color:#F16C22;
+    text-underline-offset: 6px;
+    text-align: center;
+  }
+
+  /* Previously merged rows (B:C) */
+  .job-title,
+  .job-bullet {
+    grid-column: 1;
+  }
+
+  .job-bullet ul {
+    font-size: 14px;
+    padding-right: 15px;
+  }
+
+  /* Split rows now stack */
+  .job-location,
+  .job-years {
+    grid-column: 1;
+    text-align: left;
+    padding-right: 1rem;
+  }
+
+  .job-years {
+    font-style: italic;
+    padding-left: 1rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    width: 90vw;
+  }
+
+  .skill button{
+    all: unset;
+    display: flex;
+    padding: 0.5rem 1.5rem;
+    width: 93.3%;
+  }
+
+  .skill-content {
+    display: none;
+    margin: auto;
+    width: 60%;
+    font-size: 14px;
+  }
+
+  .edu-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    width: 90vw;
+    display: block;
+  }
+
+  .edu-container1 {
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    width: 65vw;
+  }
+
+  .edu-container2 {
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    width: 65vw;
+  }
+
+  .edu-container1 .edu-years {
+    padding-right: 50px;
+  }
+
+  .edu-container2 .edu-years {
+    padding-right: 50px;
+  }
+}
