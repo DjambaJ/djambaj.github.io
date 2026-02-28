@@ -24,12 +24,6 @@ body {
     margin-bottom: 1em;
   }
   
-  header .nav a,
-  header .dropbtn {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-  }
-  
   #icon {
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 900;
@@ -123,5 +117,6 @@ body {
   }
 
   
+
 
 
