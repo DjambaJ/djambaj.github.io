@@ -114,6 +114,12 @@ body {
     .section3 img {
       height: 45px;
     }
+
+      @keyframes bg {
+      0%   { background-image: url("Geo-BG.jpg"); }
+      50%  { background-image: url("Tech-BG.jpg"); }
+      100% { background-image: url("Geo-BG.jpg"); }
+    }
   }
 
   
