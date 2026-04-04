@@ -61,13 +61,18 @@ body {
 
 .bg2 {
   background-image: url("Tech-BG.jpg");
-  animation-delay: 6s;
+  animation-delay: 3s;
+}
+
+.bg3 {
+  background-image: url("Third-BG.jpg");
+  animation-delay: 12s;
 }
 
 @keyframes fade {
   0%   { opacity: 0; }
   8%   { opacity: 1; }
-  25%  { opacity: 1; }
+  42%  { opacity: 1; }
   58%  { opacity: 0; }
   100% { opacity: 0; }
 }
