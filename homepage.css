@@ -55,7 +55,6 @@ body {
 /* Individual images */
 .bg1 {
   background-image: url("Geo-BG.jpg");
-  opacity: 1; /* fallback so something ALWAYS shows */
   animation-delay: 0s;
 }
 
