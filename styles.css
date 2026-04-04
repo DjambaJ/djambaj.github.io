@@ -99,12 +99,18 @@ header {
   footer {
     background: #333;
     padding: 40px;
-    text-align: center;
+    text-align: left;
     font-size: 0.8rem;
     color: #FFFFFF;
   }
+
   footer img {
+    float: right;
     height: 40px;
+  }
+
+  .copyright {
+      float: left;
   }
   
   /* Mobile Nav Adjustments */
