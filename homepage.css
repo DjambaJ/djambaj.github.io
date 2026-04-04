@@ -64,10 +64,11 @@ body {
 }
 
 @keyframes fade {
-  0%   { opacity: 1; }
-  45%  { opacity: 1; }
-  55%  { opacity: 0; }
-  100% { opacity: 1; }
+  0%   { opacity: 0; }   /* start invisible */
+  20%  { opacity: 1; }   /* fade in */
+  50%  { opacity: 1; }   /* fully visible */
+  70%  { opacity: 0; }   /* fade out */
+  100% { opacity: 0; }   /* stay invisible until next cycle */
 }
   
   #icon {
