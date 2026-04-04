@@ -105,12 +105,7 @@ header {
   }
 
   footer img {
-    float: right;
-    height: 40px;
-  }
-
-  .copyright {
-      float: left;
+    height: 3rem;
   }
   
   /* Mobile Nav Adjustments */
