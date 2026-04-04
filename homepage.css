@@ -64,12 +64,11 @@ body {
   animation-delay: 6s;
 }
 
-/* Animation timing tuned for 3 images */
 @keyframes fade {
   0%   { opacity: 0; }
   8%   { opacity: 1; }
-  30%  { opacity: 1; }
-  38%  { opacity: 0; }
+  42%  { opacity: 1; }
+  58%  { opacity: 0; }
   100% { opacity: 0; }
 }
   
