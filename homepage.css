@@ -32,24 +32,51 @@ body {
 /* Section 1 Hero */
 /* Section 1 Hero with background animation */
 .section1 {
-    color: #0E1111;
-    animation: bg 15s infinite;
-    background-position: center;
-    background-repeat: no-repeat;
+    position: relative;
     height: 100vh;
-    background-size: cover;
-    background-attachment: fixed;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
   
-  @keyframes bg {
-    0%   { background-image: url("Geo-BG.jpg"); }
-    50%  { background-image: url("Tech-BG.jpg"); }
-    100% { background-image: url("Geo-BG.jpg"); }
-  }
+.bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+
+  animation: fade 18s infinite;
+  will-change: opacity;
+}
+
+/* Individual images */
+.bg1 {
+  background-image: url("Geo-BG.jpg");
+  opacity: 1; /* fallback so something ALWAYS shows */
+  animation-delay: 0s;
+}
+
+.bg2 {
+  background-image: url("Tech-BG.jpg");
+  animation-delay: 6s;
+}
+
+.bg3 {
+  background-image: url("Third-BG.jpg");
+  animation-delay: 12s;
+}
+
+/* Animation timing tuned for 3 images */
+@keyframes fade {
+  0%   { opacity: 0; }
+  5%   { opacity: 1; }
+  25%  { opacity: 1; }
+  30%  { opacity: 0; }
+  100% { opacity: 0; }
+}
   
   #icon {
     width: auto;
@@ -60,6 +87,8 @@ body {
     font-weight: 900;
     font-size: 2.5rem;
     padding: 20px 30px;
+    z-index: 1;
+    position: relative;
   }
   
   /* Section 2 About */
