@@ -100,6 +100,8 @@ header {
     background: #333;
     padding: 40px;
     text-align: center;
+    font-size: 0.8rem;
+    font-color: #FFFFFF;
   }
   footer img {
     height: 40px;
