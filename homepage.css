@@ -64,11 +64,6 @@ body {
   animation-delay: 6s;
 }
 
-.bg3 {
-  background-image: url("Third-BG.jpg");
-  animation-delay: 12s;
-}
-
 /* Animation timing tuned for 3 images */
 @keyframes fade {
   0%   { opacity: 0; }
