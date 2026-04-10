@@ -225,6 +225,24 @@
       });
     }
   </script>
+
+  <script>
+    const bullets = document.querySelectorAll('.job-bullet');
+    bullets.forEach((wrapper) => {
+    const scrollBox = wrapper.querySelector('ul');
+    function updateFade() {
+      const isScrollable =
+      scrollBox.scrollHeight > scrollBox.clientHeight;
+      const isAtBottom =
+      scrollBox.scrollTop + scrollBox.clientHeight >= scrollBox.scrollHeight - 1;
+      wrapper.classList.toggle('show-fade', isScrollable && !isAtBottom);
+    }
+
+    updateFade();
+    scrollBox.addEventListener('scroll', updateFade);
+    window.addEventListener('resize', updateFade);
+  });
+  </script>
   
 </body>
 </html>
