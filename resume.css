@@ -332,7 +332,7 @@ ul{
     bottom: 6px; /* slight lift above rounded edge */
     left: 0;
     width: 100%;
-    height: 30px;
+    height: 25%;
 
     pointer-events: none;
     opacity: 0;
