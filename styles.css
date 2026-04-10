@@ -71,28 +71,33 @@ header {
 
 /* --- Responsive Styles --- */
 @media (max-width: 900px) {
+
   .menu-toggle {
-    display: block; /* show hamburger */
-    margin-left: auto; /* pushes it all the way right */
+    display: block;
+    margin-left: auto;
     color: #F16C22;
   }
+
   .nav {
-    display: none; /* hide nav by default on mobile */
+    display: none;
     flex-direction: column;
     width: 100%;
     background-color: #fff;
     position: absolute;
-    top: 55px; /* just below header */
+    top: 55px;
     left: 0;
   }
-  .nav a, .dropbtn {
+
+  .nav.show {
+    display: flex;
+  }
+
+  .nav a,
+  .dropbtn {
     width: 100%;
     text-align: left;
     padding: 15px;
     border-top: 1px solid #eee;
-  }
-  .nav.show {
-    display: flex; /* show nav when toggled */
   }
 }
   /* Footer */
@@ -108,32 +113,5 @@ header {
     height: 2rem;
   }
   
-  /* Mobile Nav Adjustments */
-  @media (max-width: 768px) {
-    header {
-      flex-direction: row;         /* keep logo left, menu button right */
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-    }
-    .nav {
-      flex-direction: column;
-      width: 100%;
-    }
-    .nav a, .dropbtn {
-      width: 100%;
-      text-align: center;
-      padding: 15px 20px;
-    }
-    .nav.show {
-      display: flex;
-      align-items: center;   /* center horizontally */
-      justify-content: center;
-      text-align: center;
-    }
-    .dropdown-content {
-    width: 100%;
-    }
-  }
 
   
