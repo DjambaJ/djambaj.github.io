@@ -326,25 +326,6 @@ ul{
     padding-right: 15px;
   }
 
-  .job-bullet::after {
-    content: '';
-    position: absolute;
-    bottom: 6px; /* slight lift above rounded edge */
-    left: 0;
-    width: 100%;
-    height: 50%;
-
-    pointer-events: none;
-    opacity: 0;
-    transition: opacity 0.4s ease;
-
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
-  }
-
-  .job-bullet.show-fade::after {
-    opacity: 1;
-  }
-
   /* Split rows now stack */
   .job-location,
   .job-years {
@@ -409,20 +390,21 @@ ul{
 }
 
 @media (max-width: 1024px) {
- 
   .job-bullet::after {
     content: '';
     position: absolute;
-    bottom: 6px; /* slight lift above rounded edge */
+    bottom: 6px;
     left: 0;
     width: 100%;
     height: 50%;
-
     pointer-events: none;
     opacity: 0;
     transition: opacity 0.4s ease;
-
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 1)
+    );
   }
 
   .job-bullet.show-fade::after {
