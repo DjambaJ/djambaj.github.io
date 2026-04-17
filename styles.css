@@ -90,6 +90,7 @@ header {
 
   .nav.show {
     display: flex;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
   }
 
   .nav a,
@@ -98,6 +99,25 @@ header {
     text-align: center;
     padding: 15px;
     border-top: 1px solid #eee;
+  }
+
+  .dropdown {
+    width: 100%;
+  }
+
+  .dropdown-content {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    background-color: #fafafa;
+  }
+
+  .dropdown-content a {
+    text-align: center;
+  }
+
+  .dropdown-content.show-dropdown {
+    display: block;
   }
 }
   /* Footer */
