@@ -13,20 +13,6 @@
   <link href="styles.css" rel="stylesheet" type="text/css">
   <link href="showcase.css" rel="stylesheet" type="text/css">
 
-  <!-- Scripts-->
-  <script>
-    document.querySelector('.menu-toggle').addEventListener('click', function () {
-      document.querySelector('.nav').classList.toggle('show');
-    });
-  
-    // Mobile dropdown toggle
-    document.querySelectorAll('.dropbtn').forEach(btn => {
-      btn.addEventListener('click', function (e) {
-        e.preventDefault();
-        this.nextElementSibling.classList.toggle('show-dropdown');
-      });
-    });
-  </script>
 </head>
 <body>
   <!-- Header / Navigation -->
@@ -100,5 +86,20 @@
       <img src="Linkedin-orange.png" alt="LinkedIn Profile">
     </a>
   </footer>
+
+    <!-- Scripts-->
+  <script>
+    document.querySelector('.menu-toggle').addEventListener('click', function () {
+      document.querySelector('.nav').classList.toggle('show');
+    });
+  
+    // Mobile dropdown toggle
+    document.querySelectorAll('.dropbtn').forEach(btn => {
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        this.nextElementSibling.classList.toggle('show-dropdown');
+      });
+    });
+  </script>
   
 </body>
