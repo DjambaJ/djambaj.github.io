@@ -98,11 +98,41 @@
   </footer>
 
   <!-- Scripts -->
-  <script>
-    document.querySelector('.menu-toggle').addEventListener('click', function () {
-      document.querySelector('.nav').classList.toggle('show');
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav');
+    const dropBtn = document.querySelector('.dropbtn');
+
+    if (menuToggle && nav) {
+      menuToggle.addEventListener('click', function () {
+        nav.classList.toggle('show');
+      });
+    }
+
+    if (dropBtn) {
+      dropBtn.addEventListener('click', function (e) {
+        if (window.innerWidth <= 900) {
+          e.preventDefault();
+          const dropdownContent = this.nextElementSibling;
+          if (dropdownContent) {
+            dropdownContent.classList.toggle('show-dropdown');
+          }
+        }
+      });
+    }
+
+    nav.querySelectorAll('a').forEach(link => {
+      if (!link.closest('.dropdown-content')) {
+        link.addEventListener('click', function () {
+          if (window.innerWidth <= 900) {
+            nav.classList.remove('show');
+          }
+        });
+      }
     });
-  </script>
+  });
+</script>
 
 
 </body>
